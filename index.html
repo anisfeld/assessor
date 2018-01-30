@@ -4,31 +4,59 @@
   <head>
     <meta charset="utf-8">
     <title>Ratios Map</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <style>
-      html, body, #map {
+      
+      
+      .container-fluid, html, body, .row, #map {
         height: 100%;
         width: 100%;
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
       }
-    
+
+      .no-pad{
+        padding: 0px;
+      }
+
+      .small-pad {
+        padding: 15px;
+      }
+     
+
+
     </style>
-    <link rel='stylesheet' id='divi-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
-    <link rel='stylesheet' id='et-gf-abel-css'  href='http://fonts.googleapis.com/css?family=Abel:400&#038;subset=latin' type='text/css' media='all' />
-    <link rel='stylesheet' id='divi-style-css'  href='http://fritzforassessor.com/wp-content/themes/Divi/style.css?ver=3.0.21' type='text/css' media='all' />
-    <link rel='stylesheet' id='et-shortcodes-css-css'  href='http://fritzforassessor.com/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes.css?ver=3.0.21' type='text/css' media='all' />
-    <link rel='stylesheet' id='et-shortcodes-responsive-css-css'  href='http://fritzforassessor.com/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive.css?ver=3.0.21' type='text/css' media='all' />
-    <link rel='stylesheet' id='magnific-popup-css'  href='http://fritzforassessor.com/wp-content/themes/Divi/includes/builder/styles/magnific_popup.css?ver=3.0.21' type='text/css' media='all' />
 
 
 
   </head>
 
   <body>
+    <div class="container-fluid fill-height">
+     <div class="row">
+        <div class="col-sm-8 no-pad">
+	        <iframe id="map" src = "https://anisfeld.carto.com/builder/f0b8e68c-4266-4188-9b20-fe432f9935c5/embed"></iframe> 
+        </div>
 
-	<iframe id="map" src = "https://anisfeld.carto.com/builder/f0b8e68c-4266-4188-9b20-fe432f9935c5/embed"></iframe>
+        <div class="col-sm-4 small-pad">
+          
+          <div> 
+            <h3> Cook County Assessment Ratios 2009-2015 for Single-family homes </h3>
 
+          </div> 
+          <a href="http://fritzforassessor.com"><img class="img-fluid" src="Fritz-2018_Long-Logo_Web.jpg"></a> 
+        </div> 
+      </div>
+    </div>
 
   </body>
 
