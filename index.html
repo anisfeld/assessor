@@ -12,60 +12,65 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <style>
-      
-      
-      .container-fluid, html, body, .row, #map {
-        height: 100%;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-        border: 0px;
-      }
-
-      .no-pad{
-        padding: 0px;
-      }
-
-      .small-pad {
-        padding: 15px;
-        padding-right: 25px;
-      }
-      
-
-      .seperate {
-        padding-top: 10px;
-        margin-top: 10px;
-        border-top: 1px solid #118E15;
-      }
-
-      .title {
-        color: #1e73be;
-        font-weight: bold;  
-        font-family: Arial;
-      }
-
-
-    </style>
-
-
-
+    <link rel="stylesheet" href="amap.css">
   </head>
 
   <body>
     <div class="container-fluid fill-height">
      <div class="row">
         <div class="col-sm-8 no-pad">
-	        <iframe id="map" src = "https://anisfeld.carto.com/builder/f0b8e68c-4266-4188-9b20-fe432f9935c5/embed"></iframe> 
+	        <iframe id="map" src = "https://anisfeld.carto.com/builder/e334d559-c19b-4c42-b407-2e43b81f773b/embed"></iframe> 
         </div>
+
+        
 
         <div class="col-sm-4 small-pad">
           <a href="http://fritzforassessor.com"><img class="img-fluid" src="Fritz-2018_Long-Logo_Web.jpg"></a> 
-          <div class="seperate"> 
-            <h3 class="title"> Cook County Estimated Market Value Ratios 2009-2015 for Single-family Homes </h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="seperate flow"> 
+            <h3 class="title"> Cook County Market Value Ratios 2009-2015 for Single-family Homes and Condos</h3>
 
+              
+                  <p>Cook County Assessor Joe Berrios's job is to estimate the value of property
+                  in the county so that taxes can be levied in proportion to property values.
+                  Using data from 2009 to 2015 (2015 is the latest year it is available), we
+                  checked to see whether he did his job well. </p>
+
+                  <p>The results are in: Berrios produced poor quality, unfair assessments.
+                  Berrios's bad assessments shifted taxes away from high value properties and
+                  onto lower value properties. In effect, Berrios made poorer residents in
+                  Cook County pay part of the tax bills of richer residents in Cook County. In
+                  many cases, taxpayers paid hundreds of dollars more in property taxes than
+                  they would have had Berrios done his job well.</p>
+
+                  <p>This map confirms what 
+                  <a href="http://www.chicagotribune.com/news/watchdog/taxdivide/">The Chicago Tribune</a> , 
+                  <a href = "https://www.propublica.org/series/the-tax-divide"> ProPublica</a>, and <a href="https://www.dropbox.com/s/n3ze4t0d612dsgn/Ross%20-%20Vertical%20Equity%20in
+                  %20Cook%20County%20-%20CMF%20-%20Final.pdf?dl=0">The University of
+                  Chicago </a> have already told us - Joe
+                  Berrios produce bad and unfair assessments. Here, we map the ratio of
+                  Berrios's estimate of home values to the sale price of homes, in the year
+                  they sold. A ratio of 1 shows that the Berrios's estimate was exactly equal
+                  to the sale price of the home. A ratio greater than 1 shows that Berrios
+                  over-estimated the value of a home, and therefore the home paid more taxes
+                  than they should have. Conversely, a ratio less than 1 shows that Berrios
+                  under-estimated properties' values, leading to lower tax bills for those
+                  properties. It is important to remember that under-value properties are not
+                  simply taxed less, they shift their unpaid amounts to the over-valued
+                  properties. </p>
+
+                  <p>In the map, lighter colors have lower market value ratios. Clearly, Berrios
+                  consistently valued north and central Chicago properties lower than western
+                  and southern properties. This produced unfair shifting of taxes from
+                  high-value, mostly white areas of the county to lower-value, mostly minority
+                  areas of the county. Joe Berrios has clearly failed to perform the central
+                  duties of his office. His failures as an assessor have unnecessarily and
+                  unfairly increased taxes for minority and low-income residents in this
+                  County. </p>
+
+                  <p>Cook County deserves a competent, fair assessor. </p>
+
+                  <p>The data driving this map is available <a href="https://www.dropbox.com/sh/6gf0dy3wb7o634j/AAAJgUUxqCKDMZ0WBCJCcrX1a?dl=0"> here.</a></p>
+              
           </div> 
           
         </div> 

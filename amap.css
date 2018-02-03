@@ -1,2 +1,39 @@
-/*container { height:device-height; }*/
-#map { height: 500px; }
+      .container-fluid, html, body, .row, #map{
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+      }
+
+
+      .no-pad{
+        padding: 0px;
+      }
+
+      .small-pad {
+        padding: 15px;
+        padding-right: 25px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+
+      .seperate {
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px solid #118E15;
+
+      }
+
+      .title {
+        color: #1e73be;
+        font-weight: bold;  
+        font-family: Arial;
+      }
+              
+      /*.flow {
+        overflow: auto;
+        cursor: pointer;
+      }*/
+
