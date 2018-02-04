@@ -17,9 +17,8 @@
         padding-right: 25px;
 		display: flex;
         flex-direction: column;
-      }
-      
-
+    }
+    
       .col-sm-4{
 		height: 660px;
 		}
